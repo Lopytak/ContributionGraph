@@ -1,1 +1,101 @@
+@font-face {
+    font-family: "InterRegular";
+    src: url("../fonts/InterRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
+#contributionGraph {
+    display: flex;
+    flex-direction: row;
+}
+
+#contributionGraphWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#contributionGraphMonths {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contributionGraphMonth {
+    margin: 0 22px 4px 22px;
+    color: #959494;
+    font-family: "InterRegular", serif;
+    font-size: 12px;
+}
+
+#contributionGraphAndWeeksWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#contributionGraphWeekDays {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contributionGraphWeekDay {
+    margin: 0 5px 17px 0;
+    color: #959494;
+    font-family: "InterRegular", serif;
+    font-size: 12px;
+}
+
+.contributionWeek {
+    display: flex;
+    flex-direction: column;
+}
+
+.contributionBlock {
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+}
+
+.contributionBlock:hover {
+    border: 1px solid #C4C4C4;
+    margin: -1px;
+}
+
+.blackBorder {
+    border: 1px solid #000;
+    margin: -1px;
+}
+
+.contributionGraphBlockPopup {
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    padding: 8px;
+    position: absolute;
+}
+
+.zeroContributions {
+    background-color: #EDEDED;
+}
+
+.oneToNineContributions {
+    background-color: #ACD5F2;
+}
+
+.tenToNineteenContributions {
+    background-color: #7FA8C9;
+}
+
+.twentyToTwentyNineContributions {
+    background-color: #527BA0;
+}
+
+.thirtyPlusContributions {
+    background-color: #254E77;
+}
